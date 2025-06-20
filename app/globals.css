@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0738;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sidebarNavItem {
+    @apply flex items-center gap-3 p-2 rounded-lg transition-all w-full text-left;
+    background: none;
+    border: none;
+}
+
+.sidebarNavItem--active {
+    background: #051342 !important;
+    color: #e3e3e3;
+    outline: 2px solid #6366f1 !important;
+}
+
+.sidebarNavItem:hover {
+    outline: 2px solid #a5b4fc;
+    background: #02205c; 
+}
+
+[data-state="open"]>.fixed,
+[data-state="open"]>.absolute,
+[data-state="open"] .bg-background,
+[data-state="open"] .bg-popover,
+[data-state="open"] .bg-white,
+[data-state="open"] .bg-card {
+    background-color: #051342 !important;
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+}
+
+[data-radix-popper-content-wrapper]>div,
+[data-radix-popper-content-wrapper]>.PopoverContent {
+    border-radius: 16px !important;
+    box-shadow: 0 8px 32px #192c4a1b !important;
+    border: none !important;
+    overflow: hidden;
+}

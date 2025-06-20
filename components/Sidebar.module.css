@@ -1,0 +1,272 @@
+.sidebarRoot {
+    background: #090737;
+    box-shadow: 0 8px 32px #192c4a18;
+    min-width: 260px;
+    max-width: 340px;
+    min-height: 100dvh;
+    /* тянется по контенту, а не по вьюпорту */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* убрано height: 100vh */
+}
+
+.sidebarScroll {
+    flex: 1 1 0%;
+    overflow-y: auto;
+    padding: 24px 0 24px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #253b73 #101835;
+}
+
+.sidebarSection {
+    margin-bottom: 18px;
+    /* стало чуть компактнее */
+    padding: 0 20px;
+}
+
+.sidebarNav {
+    margin-bottom: 10px;
+}
+
+.sidebarNavItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0.62rem 0.9rem 0.62rem 0.6rem;
+    font-size: 0.98rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: #e7ecff;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: background 0.14s, color 0.13s, box-shadow 0.12s;
+    margin-bottom: 2px;
+    outline: none;
+    text-align: left;
+}
+
+.sidebarNavItem:hover,
+.sidebarNavItem:focus-visible {
+    background: linear-gradient(96deg, #23316b 74%, #1c335f44 100%);
+    color: #fff;
+}
+
+.sidebarNavItem--active {
+    background: linear-gradient(96deg, #23316b 74%, #1c335f44 100%);
+    color: #fff !important;
+    box-shadow: 0 4px 16px #18346b16;
+}
+
+.sidebarTotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e3e3e3;
+    margin-bottom: 2px;
+    gap: 8px;
+}
+
+.sidebarSectionTitle {
+    font-size: 0.97rem;
+    font-weight: 600;
+    color: #e3e3e3;
+    margin-bottom: 0.15em;
+}
+
+.sidebarSeparator {
+    margin: 0.6em 0 0.6em 0;
+    border: none;
+    border-bottom: 1.2px solid #2543ba33;
+    height: 1px;
+    background: none;
+}
+
+.sidebarExpandBtn {
+    background: none;
+    border: none;
+    color: #bfc9e4;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.36rem 0.6rem 0.36rem 0.3rem;
+    font-size: 0.96rem;
+    font-weight: 400;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background 0.13s, color 0.13s;
+    justify-content: space-between;
+}
+
+.sidebarExpandBtn:hover {
+    background: #2d417875;
+    color: #fff;
+}
+
+.sidebarSectionAssets {
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+.sidebarAssetGroup {
+    margin-bottom: 4px;
+}
+
+.sidebarAssetTitle {
+    font-size: 0.97rem;
+    color: #c9d8f9;
+    font-weight: 500;
+}
+
+.sidebarAccountItem {
+    border-radius: 8px;
+    margin-bottom: 4px;
+    padding: 5px 10px 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.13s, box-shadow 0.13s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    gap: 7px;
+    min-height: 38px;
+}
+
+.sidebarAccountItem:hover,
+.sidebarAccountItem:focus-visible {
+    background: linear-gradient(96deg, #23316b 74%, #1c335f44 100%);
+    box-shadow: 0 2px 10px #2c56ac28;
+    color: #fff;
+}
+
+.sidebarAccountSelected {
+    background: linear-gradient(96deg, #23316b 74%, #1c335f44 100%);
+    color: #fff !important;
+    font-weight: 600;
+    box-shadow: 0 2px 10px #09b89e24;
+}
+
+.sidebarAccountName {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #e7ecff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidebarAccountOwner {
+    background: #23438a;
+    color: #f3f7fe;
+    border-radius: 7px;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-left: 6px;
+    white-space: nowrap;
+}
+
+.sidebarAccountBalance {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #e3e3e3;
+    margin-left: auto;
+    text-align: right;
+    min-width: 80px;
+}
+
+.sidebarAddBtn {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 9px;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.97rem;
+    font-weight: 600;
+    background: linear-gradient(120deg, #192553 70%, #2c56ac 100%);
+    color: #fff;
+    border-radius: 9px;
+    border: none;
+    transition: background 0.14s, box-shadow 0.12s;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarAddBtn:hover,
+.sidebarAddBtn:focus-visible {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}
+
+.sidebarProfile {
+    background: linear-gradient(120deg, #17245a 78%, #2c56ac 100%);
+    border-radius: 13px;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 14px #192c4a18;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.sidebarProfileName {
+    font-size: 1.10rem;
+    font-weight: 700;
+    color: #e7ecff;
+    margin-top: 0.5em;
+}
+
+.sidebarProfileTag {
+    color: #9eaacf;
+    font-size: 0.95rem;
+    margin-bottom: 0.2em;
+}
+
+.sidebarSharedAccess {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebarSharedUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 8px;
+    border-radius: 9px;
+    background: linear-gradient(92deg, #23316b 74%, #1c335f28 100%);
+    margin-bottom: 4px;
+    transition: background 0.14s;
+}
+
+.sidebarSharedUser:hover {
+    background: linear-gradient(90deg, #2645ae 80%, #2c56ac 100%);
+}
+
+.sidebarAvatar {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.sidebarSmallBtn {
+    background: transparent;
+    border: none;
+    color: #bfc9e4;
+    border-radius: 5px;
+    padding: 2px 6px;
+    transition: background 0.13s, color 0.13s;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.sidebarSmallBtn:hover {
+    background: #2d417860;
+    color: #fff;
+}

@@ -1,0 +1,52 @@
+.sidebarNavItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0.62rem 0.9rem 0.62rem 0.6rem;
+    font-size: 0.98rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: #e7ecff;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: background 0.14s, color 0.13s, box-shadow 0.12s;
+    margin-bottom: 2px;
+    outline: none;
+    text-align: left;
+    position: relative;
+}
+
+.sidebarNavItem:hover,
+.sidebarNavItem:focus-visible {
+    background: linear-gradient(96deg, #23316b 74%, #1c335f44 100%);
+    color: #fff;
+}
+
+.sidebarNavItem--active {
+    background: linear-gradient(96deg, #23316b 74%, #1c335f44 100%);
+    color: #fff !important;
+    box-shadow: 0 4px 16px #18346b16;
+}
+
+.badge {
+    margin-left: auto;
+    margin-right: 2px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 7px;
+    background: linear-gradient(90deg, #ed6d7a 85%, #f6b916 100%);
+    color: #fff;
+    font-size: 0.85em;
+    font-weight: 700;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px #ed6d7a28;
+    letter-spacing: 0.01em;
+    position: absolute;
+    right: 18px;
+    top: 9px;
+}

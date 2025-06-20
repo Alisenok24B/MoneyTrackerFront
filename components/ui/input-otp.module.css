@@ -1,0 +1,83 @@
+.inputOtpContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.inputOtpContainer:has(:disabled) {
+    opacity: 0.5;
+}
+
+.inputOtpGroup {
+    display: flex;
+    align-items: center;
+}
+
+.inputOtpSlot {
+    position: relative;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1.5px solid #3752a6;
+    border-bottom: 1.5px solid #3752a6;
+    border-right: 1.5px solid #3752a6;
+    background: #051342;
+    color: #e3e3e3;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.inputOtpSlot:first-child {
+    border-left: 1.5px solid #3752a6;
+    border-radius: 6px 0 0 6px;
+}
+
+.inputOtpSlot:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.inputOtpSlot:focus,
+.inputOtpSlotActive {
+    z-index: 10;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px #2563eb55;
+}
+
+.inputOtpCaret {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputOtpCaretBar {
+    height: 1.2rem;
+    width: 2px;
+    background: #e3e3e3;
+    animation: caretBlink 1s steps(1) infinite;
+}
+
+@keyframes caretBlink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.inputOtpSeparator {
+    color: #e3e3e3;
+    margin: 0 2px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; }

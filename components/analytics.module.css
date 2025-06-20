@@ -1,0 +1,421 @@
+.analyticsRoot {
+    flex: 1;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 15px;
+}
+
+.analyticsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.analyticsTitle {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #e7ecff;
+    letter-spacing: 0.01em;
+}
+
+.addOperationBtn {
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.48rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+}
+
+.addOperationBtn:focus-visible,
+.addOperationBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.addOperationBtn:hover {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}
+
+.backBtn {
+    background: none;
+    color: #bfc9e4;
+    border-radius: 8px;
+}
+
+/* Filters */
+.filterRow {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.dateRangeCard,
+.accountsCard {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #17245a 78%, #2c56ac 100%);
+    color: #e3e3e3;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px 0 #02082418, 0 1.5px 2px #101b3a09;
+    padding: 0.55rem 1rem;
+    min-width: 160px;
+    max-height: 38px;
+    margin-right: 6px;
+    cursor: pointer;
+    font-size: 0.98rem;
+}
+
+.accountsCard {
+    min-width: 170px;
+    gap: 0.5rem;
+}
+
+.accountsCardText {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f3f7fe;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accountsCard :global(.selectTrigger),
+.dateRangeCard :global(.selectTrigger) {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: #e3e3e3 !important;
+    padding: 0 !important;
+    outline: none !important;
+}
+
+.accountsCard :global(.selectContent) {
+    border: none;
+    box-shadow: 0 8px 36px 0 #02082422, 0 1.5px 2px #101b3a11;
+    background: #192b54;
+    color: #e3e3e3;
+}
+
+.filterCalendarCard {
+    background: #051342;
+    color: #e3e3e3;
+    border-radius: 14px;
+    box-shadow: 0 6px 26px 0 #0208241a, 0 1.5px 2px #101b3a11;
+    padding: 1.05rem 1.3rem;
+    min-width: 270px;
+    min-height: 210px;
+}
+
+.dateRangeButton {
+    background: none;
+    color: #e3e3e3;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.97rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.52rem 0.92rem;
+    gap: 0.53rem;
+    box-shadow: none;
+    outline: none;
+    min-height: 33px;
+}
+
+.dateRangeButton:focus,
+.dateRangeButton:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.pieBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.pieWrapperWithFlex {
+    flex: 1 1 60%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 256px;
+}
+
+.pieLegendVertical {
+    flex: 1 1 40%;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.pieLegendRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.pieLegendColor {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.pieLegendText {
+    flex: 1;
+    font-size: 1rem;
+    color: #e3e3e3;
+}
+
+.pieLegendAmount {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* CHART STYLES */
+.chartWrapper {
+    width: 100%;
+    height: 210px;
+    padding: 0.2rem 0 0.2rem 0;
+}
+
+.chartWrapper :global(.recharts-cartesian-axis-line),
+.chartWrapper :global(.recharts-cartesian-axis-tick-line) {
+    display: none;
+}
+
+.chartWrapper :global(.recharts-cartesian-axis-tick-value) {
+    fill: #bac9e5 !important;
+    font-size: 0.93rem !important;
+    font-weight: 500 !important;
+    opacity: 0.9;
+}
+
+.chartWrapper :global(.barRect) {
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.chartWrapper :global(.barRect:hover) {
+    filter: brightness(1.15) drop-shadow(0 0 9px #6acfff60);
+}
+
+.chartWrapper :global(.recharts-bar-rectangle)>path {
+    rx: 5px !important;
+    stroke: none !important;
+    /* ВАЖНО: убрали stroke, чтоб не было белой обводки */
+    stroke-width: 0 !important;
+}
+
+.chartWrapper :global(.recharts-tooltip-cursor) {
+    fill: #3064d944 !important;
+}
+
+.barRect {
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.barRect:hover {
+    filter: brightness(1.15) drop-shadow(0 0 9px #6acfff60);
+}
+
+.chartWrapper :global(.recharts-bar-rectangle)>path {
+    rx: 5px !important;
+    stroke: #ffffff06 !important;
+    stroke-width: 1.2;
+}
+
+.chartWrapper :global(.recharts-tooltip-cursor) {
+    fill: #3064d944 !important;
+}
+
+/* Transactions */
+.transactionListCard {
+    background: #051342;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px #1c1e2820;
+    border: none;
+}
+
+.transactionCardRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 13px 7px 13px;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #17245a 95%, #2c56ac 100%);
+    margin-bottom: 6px;
+    transition: background 0.13s, box-shadow 0.13s;
+}
+
+.transactionCardRow:hover {
+    background: linear-gradient(90deg, #20337b 85%, #243976 100%);
+    box-shadow: 0 2px 12px #28489212;
+}
+
+.transactionIconWrapper {
+    padding: 8px;
+    border-radius: 10px;
+    background: #222f53;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px #192c4a13;
+}
+
+.transactionTitle {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #e7ecff;
+}
+
+.transactionSubtitle {
+    font-size: 0.92rem;
+    color: #cdd5ec;
+    margin-top: 1px;
+}
+
+.transactionAmount {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.transactionAmount.income {
+    color: #4be8c7;
+}
+
+.transactionAmount.expense {
+    color: #ff5979;
+}
+
+.transactionAmount.transfer {
+    color: #cdd5ec;
+}
+
+.transactionMeta {
+    font-size: 0.92rem;
+    color: #9db1e1;
+}
+
+.separatorRow {
+    display: none;
+}
+
+.tooltipCard {
+    background: #122356;
+    border-radius: 10px;
+    padding: 13px;
+    color: #fff;
+    box-shadow: 0 6px 18px #02082433;
+    min-width: 110px;
+    font-size: 0.97rem;
+}
+
+.tooltipDate {
+    font-size: 0.91rem;
+    color: #bfc9e4;
+    margin-bottom: 2px;
+}
+
+.tooltipAmount {
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.paginationWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin: 12px 0;
+}
+
+.paginationBtn {
+    min-width: 80px;
+    border-radius: 11px !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.paginationBtn:focus,
+.paginationBtn:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.paginationInfo {
+    font-size: 1rem;
+    color: #9eaacf;
+}
+
+/* media tweaks */
+@media (max-width: 900px) {
+    .analyticsRoot {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .filterRow {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .pieBlock {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .pieWrapperWithFlex,
+    .pieLegendVertical {
+        flex: unset;
+        min-width: unset;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .transactionCardRow {
+        padding: 12px 8px;
+    }
+}
+
+.chartCard {
+    background: linear-gradient(120deg, #17245a 78%, #2c56ac 100%);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #192c4a2e;
+    padding: 0.1rem 0.2rem;
+    border: none;
+    overflow: hidden;
+}

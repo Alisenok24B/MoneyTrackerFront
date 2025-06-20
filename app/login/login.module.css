@@ -1,0 +1,105 @@
+/* login.module.css */
+
+.root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #051342 0%, #0ea5e9 100%);
+}
+
+.formCard {
+    background: #0b1741;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 36px 0 #02082433, 0 2px 4px #0ea5e922;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.error {
+    color: #ef4444;
+    font-size: 0.98rem;
+    background: #380b1b;
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.label {
+    color: #bfc9e4;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input {
+    background: #051342;
+    border: 1.5px solid #233385;
+    color: #fff;
+    border-radius: 10px;
+    padding: 11px 13px;
+    font-size: 1rem;
+    transition: border-color 0.16s;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    background: #051342;
+}
+
+.button {
+    background: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: background 0.15s;
+    box-shadow: 0 1px 8px #05134211;
+}
+
+.button:hover:not(:disabled) {
+    background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%);
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    color: #bfc9e4;
+    font-size: 1rem;
+}
+
+.footerLink {
+    color: #0ea5e9;
+    text-decoration: underline;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: color 0.13s;
+}
+
+.footerLink:hover {
+    color: #2563eb; }

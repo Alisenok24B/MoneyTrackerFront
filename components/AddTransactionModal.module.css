@@ -1,0 +1,173 @@
+.modalContent {
+    max-width: 700px;
+    /* или 420px для AddTransaction */
+    max-height: 90vh;
+    /* или 80vh для AddTransaction */
+    overflow-y: auto;
+    background: linear-gradient(135deg, #141d43 70%, #2b3570 100%);
+    border-radius: 22px;
+    /* или 19px для AddTransaction */
+    box-shadow: 0 10px 40px #1c1e2825;
+    padding: 2.2rem 1.8rem 1.5rem 1.8rem;
+    /* или по новой дизайн-сетке */
+    border: none;
+    /* !!! Это главное */
+}
+
+.header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #22294a33;
+    background: transparent;
+}
+
+.formBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1.08rem;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.input,
+.select,
+.radioGroup,
+.textarea {
+    background: linear-gradient(92deg, #21254b 75%, #19204c 100%);
+    color: #f3f3fc;
+    border-radius: 10px;
+    border: 1px solid #20244a;
+    padding: 0.62rem 0.9rem;
+    font-size: 0.97rem;
+    outline: none;
+    transition: border 0.15s;
+}
+
+.input:focus,
+.select:focus,
+.radioGroup:focus,
+.textarea:focus {
+    border: 2px solid #4f70f9;
+    background: linear-gradient(92deg, #252964 65%, #20379b 100%);
+}
+
+.label {
+    font-weight: 500;
+    font-size: 0.96rem;
+    color: #c7d1f3;
+    letter-spacing: 0.01em;
+}
+
+.labelRequired {
+    color: #ff5373;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.flexRow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.calendarButton {
+    width: 100%;
+    background: linear-gradient(92deg, #232858 75%, #172459 100%);
+    color: #e3e3e3;
+    border-radius: 10px;
+    border: 1px solid #20244a;
+    font-size: 0.98rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.62rem 0.9rem;
+}
+
+.calendarButtonPlaceholder {
+    color: #8d99c3;
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+    justify-content: flex-end;
+    padding-top: 0.6rem;
+    border-top: 1px solid #22294a33;
+    background: transparent;
+}
+
+@media (max-width: 600px) {
+    .modalContent {
+        max-width: 98vw;
+        min-width: 0;
+        padding: 0.7rem 0.2rem 0.6rem 0.2rem;
+    }
+
+    .formBlock {
+        gap: 0.82rem;
+    }
+
+    .header {
+        margin-bottom: 0.6rem;
+        padding-bottom: 0.1rem;
+    }
+}
+
+.infoBanner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 8px;
+    padding: 4px 14px;
+    background: #24304f;
+    color: #a2acd5;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #42559c;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.infoBanner__icon {
+    font-size: 1.5em;
+    color: #f6b916;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.editBtn {
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.48rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+}
+
+.editBtn:focus-visible,
+.editBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.editBtn:hover {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}

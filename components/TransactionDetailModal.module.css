@@ -1,0 +1,140 @@
+.modalContent {
+    min-width: 450px;
+    padding: 24px 30px;
+    background: linear-gradient(120deg, #17245a 78%, #2c56ac 100%);
+    color: #e3e3e3;
+    border-radius: 22px;
+    box-shadow: 0 12px 42px #1028664a;
+    font-size: 1.07rem;
+}
+
+.detailBody {
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rowTop {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 8px;
+}
+
+.iconWrap {
+    background: #222f53;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    color: #bfc9e4;
+}
+
+.amount {
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.income {
+    color: #4be8c7;
+}
+
+.expense {
+    color: #ff5979;
+}
+
+.transfer {
+    color: #cdd5ec;
+}
+
+.metaRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.02rem;
+    opacity: 0.93;
+}
+
+.accountType {
+    color: #a7b3e3;
+    font-size: 0.98rem;
+}
+
+.ownerLabel {
+    color: #92c0ff;
+    margin-left: 5px;
+    font-size: 0.96rem;
+}
+
+.transferBlock {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.transferArrow {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #bac9e5;
+    margin: 0 8px;
+}
+
+.sep {
+    margin: 20px 0 0 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+}
+
+.dangerBtn {
+    margin-right: auto;
+    background: #1f101b;
+    color: #ff445c;
+    border: none;
+    border-radius: 1.2rem;
+    font-weight: 500;
+    transition: background 0.13s;
+}
+
+.dangerBtn:hover {
+    background: #ff445c22;
+    color: #ff445c;
+}
+
+.editBtn {
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.48rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+}
+
+.editBtn:focus-visible,
+.editBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.editBtn:hover {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}

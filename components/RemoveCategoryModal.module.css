@@ -1,0 +1,50 @@
+.modalContent {
+    background: #1a2337;
+    border-radius: 16px;
+    padding: 30px 35px 26px 35px;
+    min-width: 340px;
+    box-shadow: 0 2px 22px #0810244a;
+}
+
+.contentText {
+    font-size: 1.09em;
+    color: #d4def8;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    line-height: 1.45;
+}
+
+.catName {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.deleteBtn {
+    cursor: pointer;
+    transition: background 0.13s, box-shadow 0.13s, color 0.13s;
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.45rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}

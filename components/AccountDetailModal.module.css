@@ -1,0 +1,191 @@
+.modalContent {
+    max-width: 700px;
+    /* или 420px для AddTransaction */
+    max-height: 90vh;
+    /* или 80vh для AddTransaction */
+    /* overflow-y: auto; */
+    background: linear-gradient(135deg, #141d43 70%, #2b3570 100%);
+    border-radius: 22px;
+    /* или 19px для AddTransaction */
+    box-shadow: 0 10px 40px #1c1e2825;
+    padding: 2.2rem 1.8rem 1.5rem 1.8rem;
+    /* или по новой дизайн-сетке */
+    border: none;
+    /* !!! Это главное */
+}
+
+.header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #22294a33;
+    background: transparent;
+}
+
+.detailBody {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.rowTop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.typeBadge {
+    font-size: 1rem;
+    border-radius: 1.2rem;
+    padding: 0.2rem 1rem;
+    background: #232858;
+    color: #bdc9ee;
+    border: none;
+    box-shadow: 0 2px 8px #11142514;
+}
+
+.ownerLabel {
+    color: #8bb6fa;
+    background: #203064;
+    border-radius: 0.9rem;
+    padding: 0.14rem 0.95rem;
+    font-size: 0.98rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.accountName {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #e6ebfc;
+    letter-spacing: 0.01em;
+}
+
+.accountNameInput {
+    font-size: 1.18rem;
+    font-weight: 500;
+    background: linear-gradient(92deg, #21254b 75%, #19204c 100%);
+    color: #e6ebfc;
+    border-radius: 10px;
+    border: 1.5px solid #22294a;
+}
+
+.balanceBlock {
+    margin: 0.5rem 0 0.2rem 0;
+    background: linear-gradient(90deg, #223259 50%, #174672 100%);
+    color: #63b3ed;
+    border-radius: 1rem;
+    padding: 0.75rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.13rem;
+    border: none;
+    box-shadow: 0 2px 10px #25345c0b;
+}
+
+.balanceLabel {
+    font-size: 0.96rem;
+    opacity: 0.8;
+    color: #a8bedc;
+    font-weight: 400;
+}
+
+.balanceValue {
+    font-size: 1.22rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #f6fffe;
+}
+
+.sep {
+    margin: 1.1rem 0 0.8rem 0;
+}
+
+.creditBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin: 0.4rem 0 0.2rem 0;
+}
+
+.creditRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #c2ceea;
+}
+
+.creditValue {
+    font-weight: 500;
+    color: #56b7fc;
+}
+
+.footer {
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    border-top: 1px solid #22294a33;
+    background: transparent;
+}
+
+.dangerBtn {
+    margin-right: auto;
+    background: #1f101b;
+    color: #ff445c;
+    border: none;
+    border-radius: 1.2rem;
+    font-weight: 500;
+    transition: background 0.13s;
+}
+
+.dangerBtn:hover {
+    background: #ff445c22;
+    color: #ff445c;
+}
+
+@media (max-width: 550px) {
+    .modalContent {
+        padding: 1rem 0.6rem;
+    }
+
+    .header {
+        padding-bottom: 0.2rem;
+    }
+
+    .footer {
+        margin-top: 1.2rem;
+        padding-top: 0.6rem;
+    }
+}
+
+.editBtn {
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.48rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+}
+
+.editBtn:focus-visible,
+.editBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.editBtn:hover {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff; 
+}

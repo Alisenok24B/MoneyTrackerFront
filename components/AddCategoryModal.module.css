@@ -1,0 +1,219 @@
+.modalContent {
+    background: #1a2337;
+    border-radius: 16px;
+    padding: 28px 32px 22px 32px;
+    min-width: 350px;
+    box-shadow: 0 2px 22px #0810244a;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 16px;
+}
+
+.iconFieldWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.iconDropdownWrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconDropdownBtn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 11px;
+    font-size: 1.07em;
+    /* Чуть меньше */
+    font-weight: 500;
+    color: #e5eeff;
+    cursor: pointer;
+    width: 180px;
+    /* Увеличили ширину! */
+    justify-content: center;
+    transition: background 0.11s;
+    margin: 0 auto;
+    min-height: 48px;
+    /* Добавим высоту для красоты */
+}
+
+.iconDropdownBtn:hover,
+.iconDropdownBtn:focus {
+    background: #29408a;
+}
+
+.iconLabelBtn {
+    color: #e5eeff;
+    font-weight: 500;
+    font-size: 1.04em;
+    max-width: 90px;
+    /* Чтоб не вылезало! */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.iconDropdownList {
+    background: #222e4f;
+    border-radius: 13px;
+    box-shadow: 0 4px 18px #10182f61;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110%;
+    min-width: 180px;
+    z-index: 22;
+    padding: 4px 0;
+    margin-top: 3px;
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+.iconDropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px 8px 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #e6eeff;
+    font-size: 1.02em;
+    background: transparent;
+    transition: background 0.13s;
+}
+
+.iconDropdownItem:hover {
+    background: #213679;
+    color: #fff;
+}
+
+.iconDropdownIcon {
+    width: 1.55em;
+    /* Сделать чуть крупнее и одинаковыми! */
+    height: 1.55em;
+    min-width: 1.55em;
+    min-height: 1.55em;
+    color: #97b3ea;
+    flex-shrink: 0;
+}
+
+.iconTop {
+    color: #97b3ea;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.inputRow {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.label {
+    color: #b8c8eb;
+    font-size: 1.04em;
+    font-weight: 500;
+    min-width: 76px;
+}
+
+.inputEdit {
+    background: #283766;
+    border-radius: 8px;
+    border: none;
+    padding: 7px 11px;
+    color: #f1f5fe;
+    font-size: 1.09em;
+    width: 170px;
+    margin-left: 2px;
+}
+
+.inputEdit:focus {
+    outline: none;
+    background: #314580;
+}
+
+.typeSwitcher {
+    display: flex;
+    gap: 7px;
+}
+
+.typeBtn,
+.typeBtnActive {
+    padding: 6px 17px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background 0.13s, color 0.13s;
+    background: #253a6e;
+    color: #b3c6f3;
+    cursor: pointer;
+}
+
+.typeBtnActive {
+    background: linear-gradient(120deg, #182e6b 65%, #2455ae 100%);
+    color: #fff;
+}
+
+.typeBtn:disabled,
+.typeBtnActive:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.footer {
+    margin-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.addBtn {
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.48rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+    transition: background 0.16s;
+}
+
+.addBtn:focus-visible,
+.addBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.addBtn:hover {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}
+
+.error {
+    color: #ed6d7a;
+    margin-top: 9px;
+    font-size: 0.98em;
+    text-align: center;
+}

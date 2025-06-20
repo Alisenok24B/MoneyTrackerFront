@@ -1,0 +1,153 @@
+.profileRoot {
+    flex: 1;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 15px;
+}
+
+/* Теперь не ограничиваем ширину, но можно добавить max-width, если хочешь */
+.profileGrid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    /* Можешь поставить 100vw или 100% если хочешь совсем на всю ширину */
+    margin: 0 auto;
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .profileGrid {
+        /* Если у тебя будет еще один блок справа — тогда верни grid-template-columns */
+        /* grid-template-columns: 2fr 1fr;  // если хочешь чтобы категории были шире */
+        /* Но если только один блок, пусть остается flex */
+    }
+}
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.profileTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e7ecff;
+    letter-spacing: 0.01em;
+}
+
+.profileCard {
+    background: linear-gradient(120deg, #17245a 78%, #2c56ac 100%);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #192c4a2e;
+    padding: 1.35rem 1.3rem;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    /* На всю ширину родителя! */
+    max-width: 900px;
+    /* Или убери это ограничение если надо прям во весь экран */
+    margin: 0 auto;
+}
+
+.profileCardTitle {
+    font-size: 1.27rem;
+    font-weight: 600;
+    color: #f3f7fe;
+    margin-bottom: 12px;
+}
+
+.categoriesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    /* Сетка категорий теперь тоже на всю ширину */
+}
+
+@media (max-width: 700px) {
+    .categoriesGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.categoryRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 14px;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #16204c 93%, #224297 100%);
+    border: 1.2px solid #243b6d;
+    box-shadow: 0 2px 10px #192c4a0d;
+    transition: background 0.13s, box-shadow 0.13s;
+    min-width: 0;
+    min-height: 54px;
+}
+
+.categoryInfo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+}
+
+.categoryIcon {
+    color: #97b3ea;
+    width: 1.45rem;
+    height: 1.45rem;
+    flex-shrink: 0;
+}
+
+.categoryName {
+    font-size: 1rem;
+    color: #e2eaff;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.iconActions {
+    display: flex;
+    gap: 6px;
+}
+
+.actionIcon {
+    transition: color 0.16s;
+    color: #95a4cd;
+    cursor: pointer;
+}
+
+.actionIcon:hover {
+    color: #fff;
+}
+
+.addCategoryBtn {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 9px;
+    min-height: 40px;
+    padding: 12px 13px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #b7c8ec;
+    border-radius: 12px;
+    border: 1.2px dashed #334975;
+    background: transparent;
+    transition: background 0.12s, color 0.15s, border-color 0.15s;
+    margin-top: 6px;
+}
+
+.addCategoryBtn:hover {
+    background: #233772;
+    color: #fff;
+    border-color: #5276c6;
+}

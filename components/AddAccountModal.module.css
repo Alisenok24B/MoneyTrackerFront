@@ -1,0 +1,215 @@
+.modalContent {
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #141d43 70%, #2b3570 100%);
+    border-radius: 22px;
+    box-shadow: 0 10px 40px #1c1e2825;
+    padding: 2.2rem 1.8rem 1.5rem 1.8rem;
+    border: none;
+}
+
+.header {
+    margin-bottom: 1.3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #22294a33;
+}
+
+.formBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.input {
+    background: linear-gradient(92deg, #21254b 75%, #19204c 100%);
+    color: #f3f3fc;
+    border-radius: 12px;
+    border: 1.5px solid #20244a;
+    padding: 0.82rem 1.1rem;
+    font-size: 1.02rem;
+    outline: none;
+    transition: border 0.15s;
+    height: 40px;
+}
+
+.input:focus {
+    border: 2px solid #4f70f9;
+    background: linear-gradient(92deg, #252964 65%, #20379b 100%);
+}
+
+.select,
+.radioGroup {
+    background: linear-gradient(92deg, #21254b 75%, #19204c 100%);
+    color: #f3f3fc;
+    border-radius: 12px;
+    border: 1.5px solid #22294a;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #c7d1f3;
+    letter-spacing: 0.01em;
+}
+
+.labelRequired {
+    color: #ff5373;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.flexRow {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #c7d1f3;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tooltipIcon {
+    color: #99a4cf;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: color 0.15s;
+}
+
+.tooltipIcon:hover {
+    color: #6987fb;
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    gap: 1.1rem;
+    margin-top: 2.2rem;
+    justify-content: flex-end;
+    padding-top: 1.1rem;
+    border-top: 1px solid #22294a33;
+    background: transparent;
+}
+
+.calendarButton {
+    width: 100%;
+    height: 40px;
+    /* фиксированная высота под инпут */
+    min-height: 40px;
+    /* страхуемся */
+    background: linear-gradient(92deg, #232858 75%, #172459 100%);
+    color: #e3e3e3;
+    border-radius: 12px;
+    border: 1.5px solid #20244a;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.7rem 1.11rem;
+    margin-top: 0.48rem;
+    box-sizing: border-box;
+    gap: 0.6rem;
+    /* как у input */
+}
+
+.calendarButtonPlaceholder {
+    color: #8d99c3;
+    font-weight: 400;
+}
+
+.tooltipContentFix {
+    max-width: 260px;
+    word-break: break-word;
+    white-space: pre-line;
+    font-size: 0.97rem;
+    background: #222759;
+    color: #c7d1f3;
+    border-radius: 9px;
+    border: 1px solid #22294a77;
+}
+
+.accountTypeItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accountTypeIcon {
+    width: 22px;
+    height: 22px;
+    color: #7d88a4;
+}
+
+@media (max-width: 550px) {
+    .modalContent {
+        padding: 1rem 0.6rem;
+    }
+
+    .header {
+        padding-bottom: 0.2rem;
+    }
+
+    .footer {
+        margin-top: 1.2rem;
+        padding-top: 0.6rem;
+    }
+}
+
+.creditGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem 1.2rem;
+}
+
+.cycleTypeBlock {
+    grid-column: 1 / span 2;
+    /* Тип цикла занимает две колонки */
+}
+
+@media (max-width: 600px) {
+    .creditGrid {
+        grid-template-columns: 1fr;
+        gap: 0.85rem 0;
+    }
+
+    .cycleTypeBlock {
+        grid-column: 1 / 2;
+    }
+}
+
+.editBtn {
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.48rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+}
+
+.editBtn:focus-visible,
+.editBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.editBtn:hover {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}

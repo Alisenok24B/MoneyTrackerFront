@@ -1,0 +1,205 @@
+.modalContent {
+    background: #1a2337;
+    border-radius: 16px;
+    padding: 28px 32px 22px 32px;
+    min-width: 350px;
+    box-shadow: 0 2px 22px #0810244a;
+}
+
+.loading {
+    color: #97a4cc;
+    font-size: 1.08em;
+    text-align: center;
+    margin: 18px 0 12px 0;
+}
+
+.categoryContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 16px;
+}
+
+.iconTopWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #223160;
+    border-radius: 50%;
+    margin: 0 auto 8px auto;
+    box-shadow: 0 2px 12px #17306c28;
+    position: relative;
+}
+
+.iconTop {
+    color: #97b3ea;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.iconDropdownWrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconDropdownBtn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 11px;
+    font-size: 1.07em;
+    /* Чуть меньше */
+    font-weight: 500;
+    color: #e5eeff;
+    cursor: pointer;
+    width: 180px;
+    /* Увеличили ширину! */
+    justify-content: center;
+    transition: background 0.11s;
+    margin: 0 auto;
+    min-height: 48px;
+    /* Добавим высоту для красоты */
+}
+
+.iconDropdownBtn:hover,
+.iconDropdownBtn:focus {
+    background: #29408a;
+}
+
+.iconLabelBtn {
+    color: #e5eeff;
+    font-weight: 500;
+    font-size: 1.04em;
+    max-width: 90px;
+    /* Чтоб не вылезало! */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.iconDropdownList {
+    background: #222e4f;
+    border-radius: 13px;
+    box-shadow: 0 4px 18px #10182f61;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110%;
+    min-width: 180px;
+    /* Стал шире */
+    z-index: 22;
+    padding: 4px 0;
+    margin-top: 3px;
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+.iconDropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #e6eeff;
+    font-size: 1.02em;
+    /* Чуть меньше текст */
+    background: transparent;
+    transition: background 0.13s;
+    min-width: 160px;
+}
+
+.iconDropdownItem:hover {
+    background: #213679;
+    color: #fff;
+}
+
+.iconDropdownIcon {
+    width: 1.55em;
+    /* Сделать чуть крупнее и одинаковыми! */
+    height: 1.55em;
+    min-width: 1.55em;
+    min-height: 1.55em;
+    color: #97b3ea;
+    flex-shrink: 0;
+}
+
+.row {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+}
+
+.label {
+    color: #b8c8eb;
+    font-size: 1.04em;
+    font-weight: 500;
+    min-width: 76px;
+}
+
+.value {
+    color: #f1f5fe;
+    font-size: 1.07em;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.inputEdit {
+    background: #283766;
+    border-radius: 8px;
+    border: none;
+    padding: 7px 11px;
+    color: #f1f5fe;
+    font-size: 1.09em;
+    width: 170px;
+    margin-left: 2px;
+}
+
+.inputEdit:focus {
+    outline: none;
+    background: #314580;
+}
+
+.footer {
+    margin-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.editBtn {
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+    background: linear-gradient(120deg, #17245a 70%, #2c56ac 100%);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.48rem 1.08rem;
+    box-shadow: 0 2px 18px #14389e18;
+    outline: none;
+}
+
+.editBtn:focus-visible,
+.editBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.editBtn:hover {
+    background: linear-gradient(94deg, #2543ba 80%, #213079 100%);
+    color: #fff;
+}
